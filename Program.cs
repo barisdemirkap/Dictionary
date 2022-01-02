@@ -20,7 +20,34 @@ namespace dictionary
 
             foreach (var item in users)
                 Console.WriteLine(item) ;
+            
+            //Count 
 
-        }
+            Console.WriteLine(users.Count) ;
+
+            //Contains
+            Console.WriteLine("**** Contains *****");
+            Console.WriteLine(users.ContainsKey(12));
+            Console.WriteLine(users.ContainsValue("sam"));
+
+            // Remove
+
+            Console.WriteLine("******Remove****") ;
+            users.Remove(12) ;
+            foreach (var item in users)
+                Console.WriteLine(item.Value) ;
+            
+            // Keys
+            Console.WriteLine("*****Keys******") ;
+            foreach (var item in users.Keys)
+                Console.WriteLine(item) ;
+
+            // Values
+            Console.WriteLine("*****Values******") ;
+            foreach (var item in users.Values)
+                Console.WriteLine(item) ;
+            
+
+        }   
     }
 }
